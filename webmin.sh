@@ -1,5 +1,5 @@
 #!/bin/sh
-apt-get install wget curl apache2 php5 mysql-server
+export DEBIAN_FRONTEND noninteractive
 echo Acquire::GzipIndexes "false"; > /etc/apt/apt.conf.d/docker-gzip-indexes
  apt-get update && apt-get install \
  wget \
